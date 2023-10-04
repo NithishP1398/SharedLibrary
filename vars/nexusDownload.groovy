@@ -1,5 +1,5 @@
 def call(version,outputFile,repoName,groupId,artifactId, extension){
-  def NEXUS_URL = "http://172.31.38.236:8081"
+  def NEXUS_URL = "http://13.232.96.114:8081"
   groupId = groupId.replace(".","/")
   echo groupId
   withCredentials([usernameColonPassword(credentialsId: '5a7f8600-4b51-42ce-ab7a-4112ae9e8a73',variable:'USERPASS')]) {
